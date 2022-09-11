@@ -10,24 +10,27 @@ public class Employee {
     public int getId() {
         return this.id;
     }
+
     public String getFio() {
         return this.fio;
     }
+
     public int getUnit() {
         return this.unit;
     }
+
     public int getSalary() {
         return this.salary;
     }
-    public void setFio(String fio) {
-        this.fio = fio;
-    }
+
     public void setUnit(int unit) {
         this.unit = unit;
     }
+
     public void setSalary(int sal) {
         this.salary = sal;
     }
+
     public Employee(String fio, int unit, int salary) {
         this.fio = fio;
         this.unit = unit;
