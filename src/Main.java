@@ -18,13 +18,13 @@ public class Main {
         }
     }
 
-    public static void printEmployees() {
+    private static void printEmployees() {
         for (Employee employee : EMPLOYEES) {
             System.out.println(employee);
         }
     }
 
-    public static void calculateSalary() {
+    private static int calculateSalary() {
         int sum = 0;
         for (Employee employee : EMPLOYEES) {
             sum += sum + EMPLOYEES[0].getSalary();
@@ -32,7 +32,7 @@ public class Main {
         return sum;
     }
 
-    public static void minimumSalaryOfAnEmployee() {
+    private static void minimumSalaryOfAnEmployee() {
         Employee result = EMPLOYEES[0];
         int minSalary = EMPLOYEES[0].getSalary();
 
@@ -44,10 +44,9 @@ public class Main {
                 result = employee;
             }
         }
-        return result;
     }
 
-    public static void maximumSalaryOfAnEmployee() {
+    private static void maximumSalaryOfAnEmployee() {
         Employee result = EMPLOYEES[0];
         int maxSalary = EMPLOYEES[0].getSalary();
 
@@ -59,14 +58,13 @@ public class Main {
                 result = employee;
             }
         }
-        return result;
     }
 
-    public static float calculateAverageSalary() {
+    private static float calculateAverageSalary() {
         return calculateSalary() / (float) EMPLOYEES.length;
     }
 
-    public static void printAllFio() {
+    private static void printAllFio() {
         for (Employee employee : EMPLOYEES) {
             System.out.println(employee.getFio());
         }
